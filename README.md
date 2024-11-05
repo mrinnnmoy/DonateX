@@ -22,23 +22,32 @@ There’s a need for a simple platform that makes donations and fund distributio
 
 ## ⚙️ Architecture.
 
-![Working Architecture](./working.png)
+![Working Architecture](./client/public/donateX-architecture/donateX-process.png)
+[Excalidaw File...](https://excalidraw.com/#json=mT_EDiuyR2xpqcj42jurn,VeSfDcnxrnRsewaWReJqqw)
 
 ## 🛠 Tools, Languages & Frameworks used.
 
-* 
-* 
-* 
-* 
+- **ReactJS :** Frontend library for building interactive user interfaces.
+- **Chakra UI :** UI library for responsive, accessible and customizable components.
+- **Ether.js :** JavaScript library to interact with the Ethereum blockchain.
+- **Node.js :** Backend runtime environment for server-side JavaScript.
+- **Express.js :** Web framework for building RESTful APIs on Node.js.
+- **IPFS :** Decentralized storage for campaign metadata like images and descriptions.
+- **Solidity :** Smart contract language to handle donations and campaign logic on Ethereum.
+- **WalletConnect :** Protocol enabling mobile wallet connections to the dApp.
+- **Push Protocol :** Decentralized notifications for user alerts and campaign updates.
+- **The Graph :** Indexing and querying protocol for fast blockchain data retrieval.
+- **Streamflow :** Protocol for automated, secure fund transfers to campaign creators.
 
+## 📂 Folder Structure.
 
+* **client:** Contains the frontend codebase.
+* **server:** Contains the Solidity smart contracts.
 
 ## 🧑‍💻 Contributions to this repo are WELCOME.👋
 
 * 🎨 Any improvements to the design and UI are welcome.
 * 🔨 Try to break the website by testing it to find any bugs. If you find any, check if there is an issue already open for it, if there is none, then report it.
-
-## 📂 Folder Structure.
 
 
 ## 🔃 Steps to be followed in order to make valid contributions to this repo.
