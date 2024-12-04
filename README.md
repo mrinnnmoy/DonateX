@@ -2,6 +2,8 @@
 
 Transparent Donation Matching and Automated Payment Workflows for Web3 Fundraising.
 
+![DonateX-Home](./client/public/donateX-website-design/1.png)
+
 ## ⚠️ Problem to Solve. 
 
 It’s hard for donors to see where their money goes, especially in matched donations. Nonprofits struggle to manage and distribute funds fairly. Existing tools don’t work well with crypto and require a lot of manual effort.
