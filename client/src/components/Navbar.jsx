@@ -66,7 +66,7 @@ const Navbar = () => {
 
       {/* Button section for account-related actions */}
       <div className="account-info">
-        <button>Create</button>
+        <button>Donate</button>
       </div>
 
     </div>

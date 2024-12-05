@@ -7,7 +7,7 @@
     justify-content: space-between;
     padding: 1rem 2rem;
     background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 /* Brand section styling */
@@ -39,12 +39,12 @@
 .links ul li a {
     text-decoration: none;
     font-size: 1rem;
-    color: #333;
+    color: gray;
     font-weight: 500;
 }
 
 .links ul li a:hover {
-    color: #000;
+    color: black;
     /* Hover effect */
 }
 
@@ -62,13 +62,14 @@
     border-radius: 5px;
     font-size: 1rem;
     font-weight: 600;
-    color: #333;
+    color: black;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .account-info button:hover {
     background-color: #c3e540;
+    color: gray;
     /* Slightly darker green on hover */
 }
 
@@ -97,5 +98,87 @@
         border-radius: 8px;
         padding: 1rem;
         gap: 1rem;
+    }
+}
+
+/* --- Home --- */
+.banner {
+    position: static;
+    background-image: url('./assets/DonateX-home-main.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    margin: 1rem 2rem;
+    height: 650px;
+    color: white;
+    display: flex;
+    align-items: end;
+}
+
+.banner-text {
+    text-align: left;
+    color: white;
+    position: relative;
+    z-index: 2;
+    /* Ensures the text is above the image */
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.banner-text h1 {
+    font-size: 13.5rem;
+    margin: 0 .5rem;
+    font-weight: bold;
+}
+
+.banner-text p {
+    font-size: 4.5rem;
+    width: 14rem;
+    margin: 2.3rem 0;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Button Adjustment */
+.start-fundraising-button {
+    margin: 0 0 3.75rem 32rem;
+    background-color: #b2f14e;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.start-fundraising-button:hover {
+    background-color: #9bd73f;
+    transform: scale(1.02);
+    /* Subtle hover effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .banner-text {
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .banner-text h1 {
+        font-size: 7rem;
+        margin: .25rem .25rem;
+    }
+
+    .banner-text p {
+        font-size: 2.5rem;
+        /* margin: 0 .75rem; */
+        width: 8rem;
+    }
+
+    .start-fundraising-button {
+        display: none;
     }
 }

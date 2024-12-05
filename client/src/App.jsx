@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
-// import Home from "./components/Home";
+import Home from "./components/Home";
 // import Work from  "./components/Work";
 // import Donate from "./components/Donate";
 // import About from "./components/About";
@@ -16,10 +16,10 @@ const App = () => {
       <Navbar />
       <BrowserRouter>
         <Routes>
-          {/* <Home />
-          <Work />
-          <Donate />
-          <About /> */}
+          <Route path='/' element={<Home />} />
+          {/* <Route path='/Work' element={<Work />} /> */}
+          {/* <Route path='/Donate' element={<Donate />} /> */}
+          {/* <Route path='/About' element={<About />} /> */}
         </Routes>
       </BrowserRouter>
       {/* <Footer /> */}
