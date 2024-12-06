@@ -182,3 +182,467 @@
         display: none;
     }
 }
+
+/* --- Work --- */
+/* CSS for Work Component */
+.work {
+    padding: 40px 30px;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+}
+
+.work-top {
+    margin-bottom: 40px;
+}
+
+.work-top h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.work-top p {
+    font-size: 1.35rem;
+    color: gray;
+    line-height: 1.6;
+}
+
+.work-btm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.work-box {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.work-box .icon {
+    background: #e0f7fa;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px 0;
+}
+
+.icons {
+    font-size: 2.5rem;
+    color: #9bd73f;
+}
+
+.work-box h1 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.work-box p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .work-top p {
+        font-size: 1.125rem;
+    }
+
+    .work-btm {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-box {
+        width: 90%;
+    }
+}
+
+/* --- Donate --- */
+/* Main container */
+.donate-main {
+    text-align: left;
+    margin: 30px;
+    padding: 3rem 0;
+    width: auto;
+}
+
+.donate-main h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.donate-main p {
+    font-size: 1.35rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Donation cards container */
+.donation {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual donation box */
+.donation-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 70px);
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.donation-img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.donation-content h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #666;
+    margin: 10px 0;
+}
+
+.donation-content p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Progress bar styling */
+.donation-progress-bar {
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    height: 10px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.donation-progress {
+    height: 100%;
+    background-color: #9bd73f;
+    border-radius: 10px;
+}
+
+/* Donation info */
+.donation-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.donation-info h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #222;
+}
+
+.donation-info p {
+    font-size: 1rem;
+    color: #888;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .donation-box {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .donation-box {
+        width: 100%;
+    }
+
+    .donate-main h1 {
+        font-size: 2rem;
+    }
+
+    .donate-main p {
+        font-size: 1rem;
+    }
+}
+
+/* --- Fundraiser --- */
+
+
+/* --- About --- */
+.faq-container {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container h1 {
+    font-size: 3.25rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-item {
+    border-bottom: 2px solid #000;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.faq-icon {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.faq-answer {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.active .faq-answer {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-container h1 {
+        font-size: 30px;
+    }
+
+    .faq-question {
+        font-size: 18px;
+    }
+
+    .faq-icon {
+        font-size: 25px;
+    }
+
+    .faq-answer {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-container h1 {
+        font-size: 18px;
+    }
+
+    .faq-question {
+        font-size: 14px;
+    }
+
+    .faq-icon {
+        font-size: 18px;
+    }
+
+    .faq-answer {
+        font-size: 12px;
+    }
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: start;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 2rem;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.footer-logo {
+    text-align: left;
+    margin-right: 17.5rem;
+}
+
+.footer-logo-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-logo-icon img {
+    height: 30px;
+    width: 30px;
+    /* margin: 10px; */
+}
+
+.footer h2 {
+    font-size: 30px;
+    margin: 10px 7.5px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.footer ul li:hover {
+    color: #fff;
+}
+
+/* Divider */
+.footer-divider {
+    border-top: 3.5px solid whitesmoke;
+    border-radius: 25px;
+    margin: 20px 20px;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #aaa;
+    margin: 0 2rem;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    background-color: #444;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: start;
+    }
+
+    .footer-section {
+        margin: 10px;
+    }
+
+    .footer-logo {
+        text-align: left;
+        margin-right: 4rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .footer-logo-icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

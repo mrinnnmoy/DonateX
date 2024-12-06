@@ -4,10 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import Home from "./components/Home";
-// import Work from  "./components/Work";
-// import Donate from "./components/Donate";
-// import About from "./components/About";
-// import Footer from './components/Footer/Footer';
+import Footer from './components/Footer';
 
 const App = () => {
 
@@ -17,12 +14,11 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
-          {/* <Route path='/Work' element={<Work />} /> */}
-          {/* <Route path='/Donate' element={<Donate />} /> */}
-          {/* <Route path='/About' element={<About />} /> */}
+          {/* <Route path='/Create' element={< />} /> */}
+          {/* <Route path='/Donate' element={< />} /> */}
         </Routes>
       </BrowserRouter>
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 };

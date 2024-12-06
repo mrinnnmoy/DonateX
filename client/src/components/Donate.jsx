@@ -1,8 +1,93 @@
 import React from 'react';
 
 const Donate = () => {
+  const donations = [
+    {
+      id: 1,
+      organization: 'We Care',
+      title: 'Green Fund: Sustain Earth Now',
+      raised: '$50,000.00',
+      daysLeft: '32 days left',
+      image: 'https://www.packaging-gateway.com/wp-content/uploads/sites/16/2022/09/shutterstock_1658616850_edited.jpg',
+    },
+    {
+      id: 2,
+      organization: 'Unicef',
+      title: 'Senior Health: Support Campaign',
+      raised: '$42,000.00',
+      daysLeft: '12 days left',
+      image: 'https://www.aurumliving.com/blog/wp-content/uploads/2023/01/Assisted-Living-Redefined-at-Aurum-409x320-1-409x320.jpg',
+    },
+    {
+      id: 3,
+      organization: 'Unity Foundation',
+      title: 'Disaster Care: Urgent Support',
+      raised: '$21,000.00',
+      daysLeft: '19 days left',
+      image: 'https://www.soschildrensvillages.in/wp-content/themes/SosIndia/images/emergency-care-intro-img.jpg',
+    },
+  ];
+
   return (
-    <div>Donate</div>
+    <>
+      <div className="donate-main" id='donate'>
+        <h1>Urgent Fundraising!</h1>
+        <p>
+          Time is of the essence! Join our mission Now to make an immediate impact.
+          Every second counts!
+        </p>
+        <div className="donation">
+          {donations.map((donation) => (
+            <div className="donation-box" key={donation.id}>
+              <img src={donation.image} alt={donation.title} className="donation-img" />
+              <div className="donation-content">
+                <h1>{donation.organization}</h1>
+                <p>{donation.title}</p>
+                <div className="donation-progress-bar">
+                  <div className="donation-progress" style={{ width: '70%' }}></div>
+                </div>
+                <div className="donation-info">
+                  <h1>{donation.raised}</h1>
+                  <p>{donation.daysLeft}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Fundraiser */}
+      <div className="fundraiser-container">
+        <div className="text-overlay">
+          <h1>Be The Part of Fundraisers With Over</h1>
+          <h2 className="count">217,924+</h2>
+          <p>People From Around The World Joined</p>
+          <button className="join-button">Join The Fundraisers Now!</button>
+        </div>
+        <div className="image-overlay">
+          <img
+            src="https://media.istockphoto.com/id/920513764/photo/children-playing-outdoors-on-playground-hugging.jpg?s=612x612&w=0&k=20&c=vYDdGBjGFsily_H2-KKzsXg-6a4blbNjI1QE85VMI08="
+            alt="Group hug"
+            className="fundraiser-image"
+          />
+          <img
+            src="https://www.teacheracademy.eu/wp-content/uploads/2021/07/Improving_teaching_styles.png"
+            alt="Person teaching"
+            className="fundraiser-image"
+          />
+          <img
+            src="https://img.freepik.com/free-photo/two-boys-brothers-running-autumn-park_1303-25301.jpg"
+            alt="Kids walking"
+            className="fundraiser-image"
+          />
+          <img
+            src="https://cliniquedentairecharlestrottier.com/wp-content/uploads/2017/06/sourires.jpg"
+            alt="People smiling"
+            className="fundraiser-image"
+          />
+        </div>
+      </div>
+    </>
   )
 };
 
