@@ -30,8 +30,15 @@
 }
 
 /* Navbar links */
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
 .links ul {
     display: flex;
+    align-items: center;
     gap: 2rem;
     list-style: none;
 }

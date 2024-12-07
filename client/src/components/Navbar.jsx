@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { MdClose } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Logo from "../assets/Logo.png";
+import Logo from "../assets/logo.png";
 
 const Navbar = () => {
 
@@ -34,6 +34,24 @@ const Navbar = () => {
         <span>DonateX</span>
       </div>
 
+
+      {/* Navigation links section */}
+      <div className={`links ${isNavOpen ? "show" : ""}`}>
+        <ul>
+          {/* Map over links array to generate each link item */}
+          {links.map((link, index) => (
+            <li key={index}>
+              <a href={`#${link}`}>{link}</a>
+            </li>
+          ))}
+          {/* Button section for account-related actions */}
+          <div className="account-info">
+            <button>Donate</button>
+          </div>
+        </ul>
+      </div>
+
+
       {/* Toggle button for opening/closing the navbar */}
       <div className="toggle">
         {isNavOpen ? (
@@ -50,23 +68,6 @@ const Navbar = () => {
             }}
           />
         )}
-      </div>
-
-      {/* Navigation links section */}
-      <div className={`links ${isNavOpen ? "show" : ""}`}>
-        <ul>
-          {/* Map over links array to generate each link item */}
-          {links.map((link, index) => (
-            <li key={index}>
-              <a href={`#${link}`}>{link}</a>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      {/* Button section for account-related actions */}
-      <div className="account-info">
-        <button>Donate</button>
       </div>
 
     </div>
