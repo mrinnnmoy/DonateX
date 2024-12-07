@@ -58,33 +58,33 @@ const Donate = () => {
 
       {/* Fundraiser */}
       <div className="fundraiser-container">
+        <div className="image-overlay">
+          <img
+            src="https://media.istockphoto.com/id/920513764/photo/children-playing-outdoors-on-playground-hugging.jpg?s=612x612&w=0&k=20&c=vYDdGBjGFsily_H2-KKzsXg-6a4blbNjI1QE85VMI08="
+            alt="Group hug"
+            className="fundraiser-image top-left"
+          />
+          <img
+            src="https://www.teacheracademy.eu/wp-content/uploads/2021/07/Improving_teaching_styles.png"
+            alt="Person teaching"
+            className="fundraiser-image top-right"
+          />
+          <img
+            src="https://img.freepik.com/free-photo/two-boys-brothers-running-autumn-park_1303-25301.jpg"
+            alt="Kids walking"
+            className="fundraiser-image bottom-left"
+          />
+          <img
+            src="https://cliniquedentairecharlestrottier.com/wp-content/uploads/2017/06/sourires.jpg"
+            alt="People smiling"
+            className="fundraiser-image bottom-right"
+          />
+        </div>
         <div className="text-overlay">
           <h1>Be The Part of Fundraisers With Over</h1>
           <h2 className="count">217,924+</h2>
           <p>People From Around The World Joined</p>
           <button className="join-button">Join The Fundraisers Now!</button>
-        </div>
-        <div className="image-overlay">
-          <img
-            src="https://media.istockphoto.com/id/920513764/photo/children-playing-outdoors-on-playground-hugging.jpg?s=612x612&w=0&k=20&c=vYDdGBjGFsily_H2-KKzsXg-6a4blbNjI1QE85VMI08="
-            alt="Group hug"
-            className="fundraiser-image"
-          />
-          <img
-            src="https://www.teacheracademy.eu/wp-content/uploads/2021/07/Improving_teaching_styles.png"
-            alt="Person teaching"
-            className="fundraiser-image"
-          />
-          <img
-            src="https://img.freepik.com/free-photo/two-boys-brothers-running-autumn-park_1303-25301.jpg"
-            alt="Kids walking"
-            className="fundraiser-image"
-          />
-          <img
-            src="https://cliniquedentairecharlestrottier.com/wp-content/uploads/2017/06/sourires.jpg"
-            alt="People smiling"
-            className="fundraiser-image"
-          />
         </div>
       </div>
     </>
