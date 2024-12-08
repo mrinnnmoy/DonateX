@@ -2,23 +2,25 @@ import React from 'react';
 import "./App.css";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Navbar from './components/Navbar';
 import Home from "./components/Home";
-import Footer from './components/Footer';
+import CreateCampaign from './pages/CreateCampaign';
+import Campaigns from './pages/Campaigns';
+import UserCampaigns from './pages/UserCampaigns';
+import ViewCampaign from './pages/ViewCampaign';
 
 const App = () => {
 
   return (
     <>
-      <Navbar />
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
-          {/* <Route path='/Create' element={< />} /> */}
-          {/* <Route path='/Donate' element={< />} /> */}
+          <Route path='/Create' element={<CreateCampaign />} />
+          <Route path='/Donate' element={<Campaigns />} />
+          <Route path='/User' element={<UserCampaigns />} />
+          <Route path='/View' element={<ViewCampaign />} />
         </Routes>
       </BrowserRouter>
-      <Footer />
     </>
   )
 };
