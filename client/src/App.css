@@ -190,6 +190,22 @@
     }
 }
 
+@media (min-width: 768px) {
+    .banner-text h1 {
+        font-size: 7rem;
+    }
+
+    .banner-text p {
+        font-size: 2.4rem;
+        width: 10rem;
+        margin: 1.25rem 0;
+    }
+
+    .start-fundraising-button {
+        margin: 0 0 2.5rem 7rem;
+    }
+}
+
 /* --- Work --- */
 /* CSS for Work Component */
 .work {
@@ -521,6 +537,36 @@
 
     .text-overlay button {
         font-size: 13px;
+    }
+}
+
+@media (min-width: 768px) {
+    .top-left {
+        width: 100px;
+        height: 150px;
+        top: 2rem;
+        left: 1rem;
+    }
+
+    .top-right {
+        width: 100px;
+        height: 150px;
+        top: 2rem;
+        right: 1rem;
+    }
+
+    .bottom-left {
+        width: 150px;
+        height: 100px;
+        bottom: 6rem;
+        left: 5rem;
+    }
+
+    .bottom-right {
+        width: 150px;
+        height: 100px;
+        bottom: 6rem;
+        right: 5rem;
     }
 }
 
