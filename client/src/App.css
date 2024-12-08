@@ -979,3 +979,184 @@
         font-size: 12px;
     }
 }
+
+/* --- Campaigns --- */
+.campaign-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.campaign-list-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.campaign-list-head h1 {
+    /* text-align: center; */
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Category Dropdown */
+.category-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.category-button {
+    background-color: #9bd73f;
+    color: #333;
+    padding: 2px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.category-button:hover {
+    /* background-color: #6dff00; */
+    color: #fff;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 35%;
+    right: 0;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 100px;
+}
+
+.dropdown-item {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdown-item:hover {
+    background-color: #6dff00;
+    color: white;
+}
+
+/* Campaign Cards */
+.campaign-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.campaign-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 15px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.campaign-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #666;
+    margin: 10px 0;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goal {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #222;
+}
+
+.end-date {
+    font-size: 1rem;
+    color: #888;
+}
+
+.donate-button {
+    background-color: #9bd73f;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 5px 0;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.donate-button:hover {
+    background-color: #6dff00;
+    color: #666;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .goal {
+        font-size: 0.75rem;
+    }
+
+    .end-date {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .campaign-list-head h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .dropdown-menu {
+        top: 1.6rem;
+    }
+
+    .campaign-cards {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .campaign-card {
+        width: 100%;
+    }
+
+    .goal {
+        font-size: 1rem;
+    }
+
+    .end-date {
+        font-size: 1rem;
+    }
+}
