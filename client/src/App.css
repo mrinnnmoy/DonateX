@@ -69,15 +69,22 @@
     border-radius: 5px;
     font-size: 1rem;
     font-weight: 600;
-    color: black;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .account-info button:hover {
     background-color: #c3e540;
-    color: gray;
     /* Slightly darker green on hover */
+}
+
+.pages-link {
+    text-decoration: none;
+    color: black;
+}
+
+.pages-link:hover {
+    color: gray;
 }
 
 /* Mobile responsiveness */
@@ -934,8 +941,9 @@
 
 .submit-button {
     padding: 10px;
-    background-color: #6dff00;
-    color: #000;
+    background-color: #59d400;
+    color: #555;
+    font-weight: bold;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -943,7 +951,8 @@
 }
 
 .submit-button:hover {
-    background-color: #59d400;
+    background-color: #6dff00;
+    color: #333;
 }
 
 @media (max-width: 768px) {
@@ -1158,5 +1167,29 @@
 
     .end-date {
         font-size: 1rem;
+    }
+}
+
+/* --- UserCampaigns --- */
+.start-campaign {
+    cursor: pointer;
+    font-size: 12.5px;
+    padding: 0 5px;
+    margin: 0 0 55px 10px;
+    border: none;
+    border-radius: 10px;
+    color: #333;
+    font-weight: bold;
+    background-color: #9bd73f;
+}
+
+.start-campaign:hover {
+    color: #666;
+    scale: 1.1;
+}
+
+@media (max-width: 1024px) {
+    .start-campaign {
+        padding: 5px;
     }
 }

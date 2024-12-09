@@ -30,7 +30,6 @@ There’s a need for a simple platform that makes donations and fund distributio
 ## 🛠 Tools, Languages & Frameworks used.
 
 - **ReactJS :** Frontend library for building interactive user interfaces.
-- **Chakra UI :** UI library for responsive, accessible and customizable components.
 - **Ether.js :** JavaScript library to interact with the Ethereum blockchain.
 - **Node.js :** Backend runtime environment for server-side JavaScript.
 - **Express.js :** Web framework for building RESTful APIs on Node.js.
@@ -40,6 +39,18 @@ There’s a need for a simple platform that makes donations and fund distributio
 - **Push Protocol :** Decentralized notifications for user alerts and campaign updates.
 - **The Graph :** Indexing and querying protocol for fast blockchain data retrieval.
 - **Streamflow :** Protocol for automated, secure fund transfers to campaign creators.
+
+## 👨‍💻 Project building steps.
+
+1. Build the UI and set up routes.
+2. Set up wallet integration.
+3. Write and deploy the smart contract on the blockchain.
+4. Integrate IPFS for storing campaign details.
+5. Implement The Graph for querying campaign and donation data.
+6. Create donation and campaign creation workflows on the frontend.
+7. Set up automated fund transfers using Streamflow.
+8. Add notification system using Push Protocol.
+9. Test, debug and deploy the application.
 
 ## 📂 Folder Structure.
 

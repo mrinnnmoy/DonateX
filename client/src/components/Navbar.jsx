@@ -46,7 +46,11 @@ const Navbar = () => {
           ))}
           {/* Button section for account-related actions */}
           <div className="account-info">
-            <button>Donate</button>
+            <button>
+              <a href="/Donate" className='pages-link'>
+                Donate
+              </a>
+            </button>
           </div>
         </ul>
       </div>

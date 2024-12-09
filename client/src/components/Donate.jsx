@@ -84,7 +84,11 @@ const Donate = () => {
           <h1>Be The Part of Fundraisers With Over</h1>
           <h2 className="count">217,924+</h2>
           <p>People From Around The World Joined</p>
-          <button className="join-button">Join The Fundraisers Now!</button>
+          <button className="join-button">
+            <a href="/Donate" className='pages-link'>
+              Join The Fundraisers Now!
+            </a>
+          </button>
         </div>
       </div>
     </>
