@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {ConnectButton} from "@rainbow-me/rainbowkit";
 
 const Campaigns = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -16,7 +17,7 @@ const Campaigns = () => {
     },
     {
       id: 1,
-      image: "https://i0.wp.com/regionsneuro.com/wp-content/uploads/2023/11/Regions-Healthcare-Open-Heart-Surgery-6.jpg?resize=1024%2C768&ssl=1",
+      image: "https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2024/01/surgery-scaled.jpeg?size=*:900",
       name: "Jane Smith",
       type: "Medicine",
       title: "Fund Critical Surgery",
@@ -45,6 +46,7 @@ const Campaigns = () => {
 
   return (
     <div className="campaign-list-container">
+      <ConnectButton />
       <div className="campaign-list-head">
         <h1>All On-Going Campaigns.</h1>
         {/* Category Dropdown */}
