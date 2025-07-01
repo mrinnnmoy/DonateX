@@ -1,26 +1,33 @@
 # DonateX
 
-Transparent Donation Matching and Automated Payment Workflows for Web3 Fundraising.
+A transparent Web3 donation platform empowering causes and communities with seamless crypto fundraising.
 
 ![DonateX-Home](./client/public/donateX-website-design/1.png)
 
-## ⚠️ Problem to Solve. 
 
-It’s hard for donors to see where their money goes, especially in matched donations. Nonprofits struggle to manage and distribute funds fairly. Existing tools don’t work well with crypto and require a lot of manual effort.
+## ⚠️ Problem to Solve.
 
-There’s a need for a simple platform that makes donations and fund distribution clear, automatic and secure for everyone.
+Donating online often lacks transparency. Donors rarely know where their money goes & nonprofits struggle to manage contributions in a visible, trustworthy way.
+
+Traditional platforms don’t support crypto well and existing Web3 tools can be too complex or technical for everyday users.
+
+There’s a need for a simple, secure and transparent platform that makes crypto donations easy—for both donors and campaign creators.
+
 
 ## ✅ Possible Solution.
 
-**DonateX** is a user-friendly platform that simplifies donation matching and fund distribution through:
+**DonateX** is a simple, transparent Web3 donation platform that makes it easy for anyone to support causes using crypto.
 
-1. **Transparent Matching**: Automatically matches donations and shows donors how much has been matched, with real-time progress updates.
+Here's how it works:
 
-2. **Automated Payouts**: Releases funds to nonprofits automatically based on milestones, reducing manual work and ensuring transparency.
+1. **Campaign Creation**: Anyone can create a fundraising campaign with a title, description and image — stored securely on IPFS.
 
-3. **Easy Donations**: Allows users to donate in crypto or via credit card, making it accessible for everyone.
+2. **Crypto Donations**: Supporters can donate in crypto directly to the campaign, using MetaMask or WalletConnect.
 
-4. **On-Chain Tracking**: Keeps all donation records visible on the blockchain, building trust and accountability.
+3. **On-Chain Transparency**: All donations are recorded on the blockchain, making fund flow visible and verifiable.
+
+4. **Live Donation Tracking**: Each campaign shows real-time totals, so donors can see progress as it happens.
+
 
 ## ⚙️ Architecture.
 
@@ -29,28 +36,28 @@ There’s a need for a simple platform that makes donations and fund distributio
 
 ## 🛠 Tools, Languages & Frameworks used.
 
-- **ReactJS :** Frontend library for building interactive user interfaces.
-- **Ether.js :** JavaScript library to interact with the Ethereum blockchain.
+- **React.js :** For building the frontend user interface.
+- **Ethers.js :** To interact with the Ethereum (or Polygon) blockchain.
 - **Node.js :** Backend runtime environment for server-side JavaScript.
 - **Express.js :** Web framework for building RESTful APIs on Node.js.
-- **IPFS :** Decentralized storage for campaign metadata like images and descriptions.
-- **Solidity :** Smart contract language to handle donations and campaign logic on Ethereum.
-- **WalletConnect :** Protocol enabling mobile wallet connections to the dApp.
-- **Push Protocol :** Decentralized notifications for user alerts and campaign updates.
+- **Solidity :** For writing smart contracts that handle donations and campaign logic.
+- **Hardhat :** For compiling, testing and deploying smart contracts.
+- **RainbowKit :** For connecting user wallets to the dApp.
+- **IPFS :** To store campaign metadata like images and descriptions in a decentralized way.
 - **The Graph :** Indexing and querying protocol for fast blockchain data retrieval.
-- **Streamflow :** Protocol for automated, secure fund transfers to campaign creators.
+
 
 ## 👨‍💻 Project building steps.
 
 1. Build the UI and set up routes.
-2. Set up wallet integration.
+2. Setup wallet integration.
 3. Write and deploy the smart contract on the blockchain.
 4. Integrate IPFS for storing campaign details.
 5. Implement The Graph for querying campaign and donation data.
-6. Create donation and campaign creation workflows on the frontend.
-7. Set up automated fund transfers using Streamflow.
-8. Add notification system using Push Protocol.
-9. Test, debug and deploy the application.
+6. Connect frontend to the blockchain using Ethers.js to enable campaign creation and donations.
+7. Display real-time campaign data and total donations in the frontend.
+8. Test, debug and deploy the full-stack application.
+
 
 ## 📂 Folder Structure.
 
