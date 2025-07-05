@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { MdClose } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Logo from "../assets/logo.png";
@@ -6,7 +8,8 @@ import Logo from "../assets/logo.png";
 const Navbar = () => {
 
   // Define navigation links
-  const links = ["Home", "How it Works", "Donate", "About Us"];
+  const links = ["Home", "Workflow", "Donate", "About"];
+
 
   // State to track if the navbar is open or closed
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -41,16 +44,12 @@ const Navbar = () => {
           {/* Map over links array to generate each link item */}
           {links.map((link, index) => (
             <li key={index}>
-              <a href={`#${link}`}>{link}</a>
+              <a href={`/#${link}`}>{link}</a>
             </li>
           ))}
           {/* Button section for account-related actions */}
           <div className="account-info">
-            <button>
-              <a href="/Donate" className='pages-link'>
-                Donate
-              </a>
-            </button>
+            <ConnectButton />
           </div>
         </ul>
       </div>

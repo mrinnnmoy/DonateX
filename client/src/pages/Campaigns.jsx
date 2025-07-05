@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {ConnectButton} from "@rainbow-me/rainbowkit";
+
 
 const Campaigns = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -46,7 +46,6 @@ const Campaigns = () => {
 
   return (
     <div className="campaign-list-container">
-      <ConnectButton />
       <div className="campaign-list-head">
         <h1>All On-Going Campaigns.</h1>
         {/* Category Dropdown */}

@@ -30,7 +30,7 @@ const Donate = () => {
 
   return (
     <>
-      <div className="donate-main" id='donate'>
+      <div className="donate-main" id='Donate'>
         <h1>Urgent Fundraising!</h1>
         <p>
           Time is of the essence! Join our mission Now to make an immediate impact.

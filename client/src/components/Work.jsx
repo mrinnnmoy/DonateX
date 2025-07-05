@@ -5,7 +5,7 @@ import { BsGlobeCentralSouthAsia } from "react-icons/bs";
 
 const Work = () => {
   return (
-    <div className='work' id='#Work'>
+    <div className='work' id='Workflow'>
       <div className="work-top">
         <h1>Fund, Fast As <i>Flash</i></h1>
         <p>Fundraise at the speed of thought! Elevate your cause in just a minute

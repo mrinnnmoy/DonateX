@@ -32,7 +32,7 @@ const About = () => {
 
 
   return (
-    <div className="faq-container">
+    <div className="faq-container" id='About'>
       <h1>Frequently Asked Questions.</h1>
       <div className="faq-list">
         {faqs.map((faq, index) => (
