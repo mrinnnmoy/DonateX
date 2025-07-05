@@ -65,7 +65,7 @@ const Donate = () => {
             className="fundraiser-image top-left"
           />
           <img
-            src="https://www.teacheracademy.eu/wp-content/uploads/2021/07/Improving_teaching_styles.png"
+            src="https://images.squarespace-cdn.com/content/v1/64d3c725d37e4944bc421e02/1691600682609-JH8Z6TYGBDPBWFDVHV8A/male%2Bteachers%2Bof%2Bcolor_Brandon%2BMiller.jpg"
             alt="Person teaching"
             className="fundraiser-image top-right"
           />

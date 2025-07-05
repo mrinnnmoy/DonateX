@@ -192,24 +192,29 @@
         width: 8rem;
     }
 
-    .start-fundraising-button {
+    /* .start-fundraising-button {
         display: none;
-    }
+    } */
 }
 
 @media (max-width: 1024px) {
+    .banner-text {
+        flex-direction: column;
+    }
+
     .banner-text h1 {
-        font-size: 7rem;
+        font-size: 4.5rem;
+        margin: .5rem .85rem;
     }
 
     .banner-text p {
-        font-size: 2.4rem;
-        width: 10rem;
-        margin: 1.25rem 0;
+        font-size: 1.75rem;
+        width: 15rem;
+        margin: .5rem 1rem;
     }
 
     .start-fundraising-button {
-        margin: 0 0 2.5rem 7rem;
+        margin: .5rem 1rem 1rem .75rem;
     }
 }
 
@@ -550,30 +555,30 @@
 @media (max-width: 1024px) {
     .top-left {
         width: 100px;
-        height: 150px;
-        top: 2rem;
+        height: 100px;
+        top: 0;
         left: 1rem;
     }
 
     .top-right {
         width: 100px;
-        height: 150px;
-        top: 2rem;
+        height: 100px;
+        top: 0;
         right: 1rem;
     }
 
     .bottom-left {
-        width: 150px;
+        width: 125px;
         height: 100px;
-        bottom: 6rem;
-        left: 5rem;
+        bottom: 2rem;
+        left: 3.5rem;
     }
 
     .bottom-right {
-        width: 150px;
+        width: 125px;
         height: 100px;
-        bottom: 6rem;
-        right: 5rem;
+        bottom: 2rem;
+        right: 3.5rem;
     }
 }
 
