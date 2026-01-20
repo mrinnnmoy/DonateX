@@ -16,7 +16,7 @@ const Donate = () => {
       title: 'Senior Health: Support Campaign',
       raised: '$42,000.00',
       daysLeft: '12 days left',
-      image: 'https://www.aurumliving.com/blog/wp-content/uploads/2023/01/Assisted-Living-Redefined-at-Aurum-409x320-1-409x320.jpg',
+      image: 'https://www.datocms-assets.com/70447/1709060042-older-man-arthritis-elbow-joint-pain.jpg?fit=clip&fm=webp&q=60',
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ const Donate = () => {
       title: 'Disaster Care: Urgent Support',
       raised: '$21,000.00',
       daysLeft: '19 days left',
-      image: 'https://www.soschildrensvillages.in/wp-content/themes/SosIndia/images/emergency-care-intro-img.jpg',
+      image: 'https://spotlight.lehigh.edu/sites/spotlight.lehigh.edu/files/170829-A-YG824-0001-1.jpg',
     },
   ];
 

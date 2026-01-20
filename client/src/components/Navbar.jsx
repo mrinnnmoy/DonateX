@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { MdClose } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Logo from "../assets/logo.png";
+import Logo from "../../public/assets/logo.png";
 
 const Navbar = () => {
 

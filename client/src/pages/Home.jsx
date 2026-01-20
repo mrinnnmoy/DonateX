@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Work from "./Work";
-import Donate from "./Donate";
-import About from "./About";
+import Work from "../sections/Work";
+import Donate from "../sections/Donate";
+import About from "../sections/About";
 
 const Home = () => {
   return (
