@@ -1,8 +1,9 @@
 # DonateX
 
-A transparent Web3 donation platform empowering causes and communities with seamless crypto fundraising.
+#### A Transparent Web3 Donation Platform Built with Smart Contracts & On-Chain Indexing for Secure & Trustless Fundraising.
 
 ![DonateX-Home](./client/public/donateX-website-design/1.png)
+<!-- Once build is complete, remove the design image above & add demo here. -->
 
 
 ## ⚠️ Problem to Solve.
@@ -16,23 +17,27 @@ There’s a need for a simple, secure and transparent platform that makes crypto
 
 ## ✅ Possible Solution.
 
-**DonateX** is a simple, transparent Web3 donation platform that makes it easy for anyone to support causes using crypto.
+**DonateX** is an ETH-based, Entry-level Web3 donation platform that demonstrates secure smart contracts, on-chain transparency & indexed data dashboards.
 
 Here's how it works:
 
-1. **Campaign Creation**: Anyone can create a fundraising campaign with a title, description and image — stored securely on IPFS.
+1. **Campaign Creation** : Users can create fundraising campaigns with a title, description, image, funding goal & deadline. Campaign metadata is stored in decentralized storage (IPFS), while ownership and funding logic are handled on-chain.
 
-2. **Crypto Donations**: Supporters can donate in crypto directly to the campaign, using MetaMask or WalletConnect.
+2. **Crypto Donations (ETH/POL)** : Donors can contribute to active campaigns through a secure smart contract. All donations are recorded on-chain, ensuring transparency & immutability.
 
-3. **On-Chain Transparency**: All donations are recorded on the blockchain, making fund flow visible and verifiable.
+3. **Donation Pooling via Smart Contracts** : Funds are pooled within the smart contract instead of being transferred instantly, preventing misuse and enabling controlled fund releases.
 
-4. **Live Donation Tracking**: Each campaign shows real-time totals, so donors can see progress as it happens.
+4. **Automated Fund Withdrawals** : Campaign creators can withdraw funds automatically once campaign conditions are met (e.g., funding goal reached or campaign completed), eliminating manual intervention.
+
+5. **Indexed Dashboards for Donors & Campaigners** : A dedicated dashboard showing Campaigns created by a user, Donations made by a user, Campaign funding progress (amount raised, amount remaining), Transaction history and timestamps. Blockchain events are indexed to enable fast and efficient data retrieval.
+
+6. **On-Chain Transparency & Auditability** : All campaign creation, donations and withdrawals are publicly verifiable on the blockchain, building trust between donors and campaign creators.
 
 
 ## ⚙️ Architecture.
 
-![Working Architecture](./client/public/donateX-architecture/donateX-process.png)
-[Excalidaw File...](https://excalidraw.com/#json=mT_EDiuyR2xpqcj42jurn,VeSfDcnxrnRsewaWReJqqw)
+![Working Architecture](./client/public/donateX-architecture/DonateX-Architecture.png)
+
 
 ## 🛠 Tools, Languages & Frameworks used.
 
@@ -47,22 +52,71 @@ Here's how it works:
 - **The Graph :** Indexing and querying protocol for fast blockchain data retrieval.
 
 
-## 👨‍💻 Project building steps.
+## 👨‍💻 Project Building Steps.
 
-1. Build the UI and set up routes.
-2. Setup wallet integration.
-3. Write and deploy the smart contract on the blockchain.
-4. Integrate IPFS for storing campaign details.
-5. Implement The Graph for querying campaign and donation data.
-6. Connect frontend to the blockchain using Ethers.js to enable campaign creation and donations.
-7. Display real-time campaign data and total donations in the frontend.
-8. Test, debug and deploy the full-stack application.
+1. Design & build the frontend UI, including pages and routes for:
+   - Campaign listing and details,
+   - Campaign creation,
+   - Donor and campaigner dashboards.
+
+2. Integrate Web3 wallet connection (MetaMask) for user authentication & transactions.
+
+3. Design, write and deploy smart contracts to:
+   - Create and manage donation campaigns,
+   - Pool donations securely,
+   - Track donors, campaign progress and deadlines
+   - Automatically release funds to campaign creators upon completion.
+
+4. Integrate IPFS to store decentralized campaign metadata
+   (title, description, images and story content).
+
+5. Implement The Graph as a unified indexing layer to:
+   - Index campaign creation and donation events,
+   - Enable real-time campaign statistics,
+   - Support historical donation and funding analytics.
+
+6. Connect the frontend to smart contracts using Ethers.js to:
+   - Create campaigns,
+   - Donate to campaigns,
+   - Fetch on-chain and indexed data.
+
+7. Build donor and campaigner dashboards using indexed data to display:
+   - Donations made and received
+   - Campaign status, progress and transaction history.
+
+8. Display live campaign progress and total funds raised using indexed and on-chain data.
+
+9. Test, debug and deploy the full-stack decentralized application.
+
 
 
 ## 📂 Folder Structure.
 
 * **client:** Contains the frontend codebase.
 * **server:** Contains the Solidity smart contracts.
+
+```
+
+├─client/
+| ├─public/
+│ │  └─ assets/         # Static files (Images, icons and other media files)
+| ├─src/
+│ | ├─ components/      # Small, reusable UI components.
+│ | ├─ sections/        # Main page sections. (Hero, Tech Stack, Projects, etc.)
+│ | └─ pages/           # Detailed/Featured pages for projects, blogs and experience.
+| ├─ App.css            # Styles specific to the App component or top-level component styling.
+| ├─ App.jsx            # Root file that assembles sections and manages routing.
+| ├─ index.css          # Global styles, CSS resets and base theme styles.
+| ├─ main.jsx           # Bootstraps the React app & wraps it with Wagmi, RainbowKit and React Query providers to enable wallet connections, blockchain interactions and efficient data fetching across the entire application.
+| └─ wagmi.js           # Sets up wallet connectivity & blockchain network support for the dApp using RainbowKit & Wagmi.
+├─server/
+| ├─contracts/          # Contains all the Solidity contracts.
+| ├─ignition/           # Contains Hardhat Ignition deployment modules that describe how to deploy your contracts.
+| ├─test/               # Contains TypeScript and Solidity tests.
+| └─ hardhat.config.js  # Project’s main configuration file. Defines the Solidity compiler version, network configurations, plugins and tasks.
+
+```
+
 
 ## 🧑‍💻 Contributions to this repo are WELCOME.👋
 
